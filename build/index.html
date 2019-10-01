@@ -2,7 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<title>Graduation project</title>
+		<title>Грисенко Вадим-Frontend-разработчик и Web-верстальщик</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 		<script src="https://use.fontawesome.com/dbac42f0f1.js"></script>
@@ -10,53 +10,51 @@
 		<link rel="stylesheet" type="text/css" href="../styles/owl.theme.default.css">
 		<link rel="stylesheet" type="text/css" href="../styles/magnific-popup.css">
 		<link rel="stylesheet" type="text/css" href="../styles/style.css">
-		<style>
-		@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap');
-		</style>
 	</head>
 	<body>
+		<h1>Грисенко Вадим-Frontend-разработчик и Web-верстальщик</h1>
 		<!-- form itself -->
 		<form id="test-form" class="mfp-hide white-popup-block">
-			<h1 class="white-popup-block__title">Получить консультацию.</h1>
-			<fieldset style="border:0;">
+			<h2 class="white-popup-block__title">Заказать звонок</h2>
+			<fieldset style="border:0;"> 
 				<ul>
 					<li>
-						<label for="name">Name</label>
-						<input id="name" name="name" type="text" placeholder="Name" required="">
+						<label for="name">Имя</label>
+						<input id="name" name="name" type="text" placeholder="Василий Иванов" required="">
+					</li>
+					<li class="mail">
+						<label for="email">Эл.почта</label>
+						<input id="email" name="email" type="email" placeholder="example@mail.ru" required="">
 					</li>
 					<li>
-						<label for="email">Email</label>
-						<input id="email" name="email" type="email" placeholder="example@domain.com" required="">
-					</li>
-					<li>
-						<label for="phone">Phone</label>
-						<input id="phone" name="phone" type="tel" placeholder="Eg. +447500000000" required="">
+						<label for="phone">Телефон</label>
+						<input id="phone" name="phone" type="tel" placeholder="+7(___) ___ __ __" required="">
 					</li>
 				</ul>
 				<button class="button" type="submit">Отправить</button>
 			</fieldset>
 		</form>
-		<header class="header">
+		<header class="header"> 
 			<div class="header__nav-mob-js">
 				<button class="header-nav-mob__button-js"></button>
 			</div>
 			<nav class="header__nav-js">
-				<a href="#" class="header-nav__link">Услуги</a>
-				<a href="#" class="header-nav__link">Портфолио</a>
-				<a href="#" class="header-nav__link">Стоимость</a>
+				<a href="#services" class="header-nav__link">Услуги</a>
+				<a href="#example-work" class="header-nav__link">Портфолио</a>
+				<a href="#advert" class="header-nav__link">Стоимость</a>
 			</nav>
 			<div class="header__tel">
-				<div class="header-tel__number">+7 (902) 192-77-60</div>
-				<a class="popup-with-form" href="#test-form"><button class="header-tel__button"><span class="header-tel__button-text">Заказать звонок</span></button></a>
+				<div class="header-tel__number"><a href="tel:+79021927760">+7(902) 192 77 60</a></div>
+				<a class="header-tel__button" href="#test-form"><span class="header-tel__button-text">Заказать звонок</span></a>
 			</div>
 		</header>
 		<main class="main">
 			<section class="main__top">
 				<div class="top-wrap">
 				    <div class="top-wrap__info">
-						<h1 class="top-wrap-info__title-name">Грисенко Вадим</h1>
+						<h2 class="top-wrap-info__title-name">Грисенко Вадим</h2>
 						<h3 class="top-wrap-info__title">Frontend-разработчик и Web-верстальщик</h3>
-						<a class="popup-with-form" href="#test-form"><button class="button top-wrap-info__button">Узнать больше</button></a>
+						<div class="top-wrap-info__button button"><a class="popup-with-form"  href="#test-form">Узнать больше</a></div>
 					</div>
 					<img class="top-wrap__img" src="../assets/img/man.png" alt="foto">	
 					<div class="top-wrap__tags">
@@ -69,13 +67,13 @@
 					</div>
 				</div>
 				<div class="top-wrap__info-mob">
-					<h1 class="top-wrap-info-mob__title-name">Грисенко Вадим</h1>
+					<h2 class="top-wrap-info-mob__title-name">Грисенко Вадим</h2>
 					<h3 class="top-wrap-info-mob__title">Frontend-разработчик и Web-верстальщик</h3>
-					<a class="popup-with-form" href="#test-form"><button class=" button top-wrap-info-mob__button">Узнать больше</button></a>
+					<div class="top-wrap-info-mob__button button"><a class="popup-with-form" href="#test-form">Узнать больше</a></div>
 				</div>
 			</section>
 			<section class="main__services">
-					<h2 class="services__title">Что я делаю</h2>
+					<h2 class="services__title"><a name="services"></a>Что я делаю</h2>
 					<div class="services__list">
 						<div class="services__list-wrap">
 							<img src="../assets/img/toolsAndUtensils.png" class="services__list-img" alt="icon"><h3 class="services-list__title">Вёрстка лендинг–страниц и сайтов любой сложности</h3>
@@ -90,10 +88,10 @@
 							<img src="../assets/img/coding.png" class="services__list-img"  alt="icon"><h3 class="services-list__title">Исправление и доработка существующей вёрстки</h3>
 						</div>
 					</div>
-					<a class="popup-with-form" href="#test-form"><button class="button services__button">Узнать стоимость</button></a>
+					<div class="services__button button"><a class="popup-with-form" href="#test-form">Узнать стоимость</a></div>
 			</section>
 			<section class="main__example-work">
-				<h2 class="example-work__title">Примеры моих работ</h2>
+				<h2 class="example-work__title"><a name="example-work"></a>Примеры моих работ</h2>
 				<div class="slide owl-carousel owl-theme">
 					<div><img src="../assets/img/LayerTwo.jpg" class="example-work__img" alt="Work"><h3 class="example-work__img-title">Сайт психолога Веры Антоновой</h3>
 					</div>
@@ -108,10 +106,10 @@
 					<div><img src="../assets/img/LayerThree.jpg" class="example-work__img" alt="Work"><h3 class="example-work__img-title">Сайт магазина «Рыболов»</h3>
 					</div>
 				</div>
-				<a class="popup-with-form" href="#test-form"><button class="button example-work__button">Заказать проект</button></a>
+				<div class="example-work__button button"><a class="popup-with-form" href="#test-form">Заказать проект</a></div>
 			</section>
 			<section class="main__advert">
-				<h2 class="advert__title">Адаптивная вёрстка под все устройства и браузеры от 1000 рублей всего за 4 часа *</h2>
+				<h2 class="advert__title"><a name="advert"></a>Адаптивная вёрстка под все устройства и браузеры от 1000 рублей всего за 4 часа *</h2>
 				<p class="advert__text">* Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально в зависимости от сложности задач</p>
 			    <div class="advert__tags">
 			    	<span class="advert-tags advert__tags-one">{}</span>
@@ -124,22 +122,22 @@
 		</main>
 		<footer class="footer">
 			<nav class="footer__nav">
-				<a href="#" class="footer-nav__link">Услуги</a>
-				<a href="#" class="footer-nav__link">Портфолио</a>
-				<a href="#" class="footer-nav__link">Стоимость</a>
+				<a href="#services" class="footer-nav__link">Услуги</a>
+				<a href="#example-work" class="footer-nav__link">Портфолио</a>
+				<a href="#advert" class="footer-nav__link">Стоимость</a>
 			</nav>
 			<div class="footer__contact">
-				<div class="footer-contact footer-contact__tel"><i class="fa fa-phone" aria-hidden="true"></i>+7 (902) 192-77-60</div>
-				<div class="footer-contact footer-contact__post"><i class="fa fa-envelope-o" aria-hidden="true"></i>iakkigg@mail.ru</div>
+				<div class="footer-contact footer-contact__tel"><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+79021927760">+7(902) 192 77 60</a></div>
+				<div class="footer-contact footer-contact__post"><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:iakkigg@mail.ru">iakkigg@mail.ru</a></div>
 			</div>
 			<div class="footer__social">
-				<a class="popup-with-form" href="#test-form"><button class="button footer-social__bell">Заказать звонок</button></a>
+				<div class="footer-social__button button"><a class="popup-with-form" href="#test-form">Заказать звонок</a></div>
 				<div>
 					<a class="footer-social-link vk" href="https://vk.com"></a>
 					<a class="footer-social-link fb" href=""></a>
 					<a class="footer-social-link twit" href=""></a>
 					<a class="footer-social-link insta" href=""></a>
-				</div>
+				</div> 
 			</div>
 		</footer>
 		<div class="footer__copy">&copy; Вадим Грисенко, 2016 – 2018</div>
