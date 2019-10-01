@@ -53,6 +53,10 @@ function buildAssets() {
     .pipe(dest('build/assets/'));
 }
 
+function buildFont() {
+  return src('src/fonts/**/*')
+    .pipe(dest('build/fonts/'));
+}
 // Отслеживание
 function watchFiles() {
   watch('src/pages/*.html', buildPages);
@@ -67,7 +71,7 @@ exports.default =
       parallel(
         devServer,
         series(
-          parallel(clearBuild,buildPages, buildStyles, buildScripts, buildAssets,),
+          parallel(clearBuild,buildPages, buildStyles, buildScripts, buildAssets,buildFont),
           watchFiles
         )
     )

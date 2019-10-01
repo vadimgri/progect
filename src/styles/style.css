@@ -1,3 +1,11 @@
+@font-face {
+	font-family: 'Roboto';
+	src: local('Roboto'),
+	     url('../fonts/Roboto.woff2') format('woff2'),
+	     url('../fonts/Roboto.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
 html ,body {
 	margin: 0;
 	padding: 0;
@@ -22,7 +30,9 @@ html ,body {
 * button {
 	cursor: pointer;
 }
-
+h1 {
+	display: none;
+}
 .white-popup-block__title {
 	font-size: 26px;
 	text-align: center;
@@ -36,6 +46,10 @@ html ,body {
 	height: 40px;
 	border: none;
 	padding: 5px;
+	background-color: #e4e4e4;
+}
+#name {
+	margin-left: 53px;
 }
 .header {
 	display: flex;
@@ -54,16 +68,14 @@ html ,body {
 }
 .header-tel__button {
 	background-color: #fbfbfb;
-	width: 208px;
-	height: 44px;
 	border: 1px solid #f53f4f;
+	margin: 28px 0;	
+}
+.header-tel__button-text {
 	color: #f53f4f;
-	margin: 28px 0;
-	font-size: 16px;
-	outline: none;
 }
 .header__nav-js {
-	display: flex;
+	display: block;
 	align-items: center;
 	padding: 45px 0;
 }
@@ -133,7 +145,7 @@ html ,body {
 	display: block;
 }
 .header__nav-js_activ {
-	display: flex;
+	display: block;
 	flex-direction: column;
 	top: 100px;
 }
@@ -143,16 +155,18 @@ html ,body {
 	font-weight: bold;
 	padding: 41px 30px;
 }
+.header-tel__number a {
+	color: #000000;
+}
 
 .header-tel__button {
 	background-color: #fbfbfb;
-	width: 208px;
-	height: 44px;
 	border: 1px solid #f53f4f;
 	color: #f53f4f;
 	margin: 28px 0;
-	font-size: 16px;
-	outline: none;
+	width: 270px;
+	height: 60px;
+	padding: 20px 70px;
 }
 
 .top-wrap {
@@ -180,19 +194,28 @@ html ,body {
 	z-index: 1;
 }
 
-.button {
-	background-color: #ff4e2e;
+
+.popup-with-form {
+	color: #ffffff;
 	width: 270px;
 	height: 60px;
+	text-align: center;
+	font-size: 16px;
 	outline: none;
-	border: none;
-	font-size: 18px;
-	color: #ffffff;
-	margin-top: 65px;
+    padding: 20px 70px;
 }
 
 .top-wrap__info {
 	align-self: center;
+}
+.button {
+	background-color: #ff4e2e;
+	color: #ffffff;
+	width: 270px;
+	height: 60px;
+	padding: 20px 0;
+	margin-top: 65px;
+	border: none;
 }
 .top-wrap__tags {
     font-weight: bold;
@@ -310,11 +333,16 @@ html ,body {
 	color: #939cb4;
 	font-size: 16px;
 }
+.top-wrap-info-mob__button {
+	margin: 0 auto;
+}
 .main__services {
 	text-align: center;
 	background-color: #ffffff;
-	padding-bottom: 103px;
-
+}
+.services__button {
+	margin: 65px auto 0;
+	width: 277px;
 }
 
 .services__title {
@@ -366,6 +394,9 @@ html ,body {
 	color: #8993ad;
 	margin: 40px 0 35px;
 }
+.example-work__button {
+	margin: 65px auto 0;
+}
 
 .main__advert {
 	width: 100%;
@@ -383,7 +414,7 @@ html ,body {
 }
 
 .advert__tags-one {
-	top: 66px;
+	top: 46px;
 	left: 125px;
 	font-size: 48px;
 	transform: rotate(30deg);
@@ -404,7 +435,7 @@ html ,body {
 }
 
 .advert__tags-four {
-	top: 80px;
+	top: 40px;
 	right: 210px;
 	font-size: 40px;
 	transform: rotate(-30deg);
@@ -443,14 +474,16 @@ html ,body {
     color: #5a5b5f;
 }
 
-.footer-social__bell {
+.footer-social__button {
     margin: 0 0 28px;
 }
 
 .footer__contact {
 	font-size: 25px;
 }
-
+.footer__contact a{
+    color: #000000;
+}
 .footer-contact {
 	margin-bottom: 35px;
 }
@@ -494,9 +527,7 @@ html ,body {
 }
 
 @media (min-width: 1024px) {
-	.header__nav-js {
-		display: flex;
-	}
+	
 }
 
 @media (min-width: 768px) and (max-width: 1150px) {
@@ -515,6 +546,7 @@ html ,body {
 	}
 	.top-wrap__img {
 		width: 50%;
+		height: auto;
 	}
 	.header__tel {
 		align-items: flex-start;
@@ -527,9 +559,8 @@ html ,body {
 		margin-top: 40px;
 	}
 	.header-nav__link {
-		display: block;
-		padding: 15px 0;
-		font-size: 20px;
+		font-size: 27px;
+		padding: 10px;	
 	}
 	.header__nav-mob-js {
 		display: block;
@@ -540,8 +571,9 @@ html ,body {
 		display: none;
 	    position: absolute;
 	    background-color:#fbfbfb;
-	    top: 74px;
-	    width: 120px;
+		top: 110px;
+		width: 100%;
+		padding: 0;
     }
     .services__list-wrap {
     	width: 333px;
@@ -674,7 +706,8 @@ html ,body {
     .header__tel
     .header-tel__button {
     	width: 26px;
-    	height: 26px;
+		height: 26px;
+		padding: 0;
     	border-radius: 50%;
     	background: url(../assets/img/callTop.png) no-repeat center center;
     }
@@ -721,18 +754,15 @@ html ,body {
 		align-self: center;
 	}	
 	.header-nav__link {
-		display: block;
-		width: 100px;
-		padding: 15px 0;
+		padding: 0px 10px;
 		font-size: 16px;
 	}
 	.header__nav-js {
 		display: none;
 		position: absolute;
-		margin-top: 80px;
-		z-index: 2;
-		left: 0;
-		padding: 10px;
+		top: 80px;
+		left: 15px;
+		padding: 0px;
 	}
 	.header-nav-mob__button-js::after, .header-nav-mob__button-js::before {
 		width: 24px;
