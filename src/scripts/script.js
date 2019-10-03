@@ -102,10 +102,12 @@ $(document).ready(function() {
 
     $('.header-tel__button').click(function(){
         $('.mail').css('display', 'none');
+        $('.white-popup-block__title').text('Заказать звонок')
     });
 
     $('.popup-with-form').click(function(){
         $('.mail').css('display', 'block');
+        $('.white-popup-block__title').text('Оставить заявку')
     });
  
 })

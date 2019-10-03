@@ -40,7 +40,7 @@ h1 {
 	color: #000000;
 }
 #name, #email, #phone {
-	margin: 10px 20px;
+	margin: 10px 10px;
 	list-style: none;
 	outline: none;
 	height: 40px;
@@ -49,7 +49,7 @@ h1 {
 	background-color: #e4e4e4;
 }
 #name {
-	margin-left: 53px;
+	margin-left: 43px;
 }
 .header {
 	display: flex;
@@ -488,9 +488,10 @@ h1 {
 	margin-bottom: 35px;
 }
 
-.fa-envelope-o, .fa-phone {
+.icofont-phone, .icofont-ui-message {
+	
 	color: #f91284;
-	padding-right: 25px;
+	padding-right: 7px;
 }
 
 .footer-social-link {
@@ -510,10 +511,6 @@ h1 {
 
 .twit {
 	background-position: -107px 0;
-}
-
-.insta {
-	background-position: -159px 0;
 }
 
 .footer__copy {

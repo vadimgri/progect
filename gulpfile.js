@@ -57,6 +57,10 @@ function buildFont() {
   return src('src/fonts/**/*')
     .pipe(dest('build/fonts/'));
 }
+function buildIconFont() {
+  return src('src/icofont/**/*')
+    .pipe(dest('build/icofont/'));
+}
 // Отслеживание
 function watchFiles() {
   watch('src/pages/*.html', buildPages);
@@ -71,7 +75,7 @@ exports.default =
       parallel(
         devServer,
         series(
-          parallel(clearBuild,buildPages, buildStyles, buildScripts, buildAssets,buildFont),
+          parallel(clearBuild, buildPages, buildStyles, buildScripts, buildAssets, buildFont, buildIconFont),
           watchFiles
         )
     )
