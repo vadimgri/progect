@@ -338,6 +338,7 @@ h1 {
 .main__services {
 	text-align: center;
 	background-color: #ffffff;
+	padding-bottom: 100px;
 }
 .services__button {
 	margin: 65px auto 0;
