@@ -32,6 +32,7 @@ html ,body {
 h1 {
 	display: none;
 }
+
 .white-popup-block__title {
 	font-size: 26px;
 	text-align: center;
@@ -42,10 +43,12 @@ h1 {
 	margin: 10px 10px;
 	list-style: none;
 	outline: none;
-	height: 40px;
+	height: 45px;
+	width: 64%;
 	border: none;
-	padding: 5px;
+	padding: 5px 10px;
 	background-color: #e4e4e4;
+	font-size: 16px;
 }
 #name {
 	margin-left: 43px;
@@ -215,6 +218,7 @@ h1 {
 	padding: 20px 0;
 	margin-top: 65px;
 	border: none;
+	font-size: 16px;
 }
 .top-wrap__tags {
     font-weight: bold;
