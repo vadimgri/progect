@@ -12,7 +12,7 @@
 .white-popup-block {
     position: relative;
     background: #fbfbfb;
-    padding: 40px;
+    padding: 40px 0;
     text-align: center;
     width: auto;
     max-width: 500px;
